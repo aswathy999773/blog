@@ -28,7 +28,7 @@ export default function AddForm() {
               label="I agree to Terms and Conditions"
             />
           </Form.Group>
-          <Button variant="info" type="submit">
+          <Button variant="secondary" type="submit">
             Submit
           </Button>
         </Form>
