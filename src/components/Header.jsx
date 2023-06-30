@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 export default function Header() {
   return (
     <div>
-      <Navbar bg="primary " data-bs-theme="dark">
+      <Navbar bg="secondary " data-bs-theme="dark">
         <Container style={{padding: '10px 100px'}}>
             <Navbar.Brand href="#home">Blogs</Navbar.Brand>
             <Nav className="me-auto">

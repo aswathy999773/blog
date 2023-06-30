@@ -1,11 +1,9 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-import { useState, useEffect } from "react";
 import Container from "react-bootstrap/Container";
 
-
-export default function App() {
+export default function BlogsComponent() {
   const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
@@ -26,18 +24,19 @@ export default function App() {
 
   return (
     <div>
-      
       <Container>
-      <h1 className="text-center mt-3 pt-3">Blogs</h1>
+        <h1 className="color='secondary' text-center mt-3 pt-3">Blogs</h1>
         {blogs.map((blog, i) => {
           return (
             <Card key={i} className="card">
               <Card.Body>
-              <Card.Title>Blog number {i+1}</Card.Title>
-              <hr />
+                <Card.Title>Blog number {i + 1}</Card.Title>
+                <hr />
                 <Card.Title>{blog.title}</Card.Title>
                 <Card.Text>{blog.body}</Card.Text>
-                <Button style={{backgroundColor: '#0000FF', color: 'white'}}>Show More</Button>
+                <Button style={{ backgroundColor: "#0000FF", color: "black" }}>
+                  Show More
+                </Button>
               </Card.Body>
             </Card>
           );

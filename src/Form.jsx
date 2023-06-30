@@ -5,7 +5,7 @@ import Form from "react-bootstrap/Form";
 
 export default function AddForm() {
   return (
-    <div>
+    <div className="color='primary'">
       <Container>
         <Form className="form">
           <Form.Group className="mb-3" controlId="formBasicText">
